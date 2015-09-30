@@ -1,0 +1,111 @@
+/*
+	File		: yjwl.lightbox.css
+	Author		: Christopher Smirga
+	Description	: Yaga.io JavaScript Library Lightbox CSS
+*/
+
+/******************************************************************************/
+
+.yaga-lightbox-overlay
+{
+	background: #000000 none repeat scroll 0% 0%;
+	box-sizing: border-box;
+	height: 100%;
+	left: 0px;
+	opacity: 0.8;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-overlay.show
+{
+	display: block;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-overlay.hide
+{
+	display: none;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-container
+{
+	box-sizing: border-box;
+	height: 100%;
+	left: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: fixed;
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-container::before
+{
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-outer
+{
+	background: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px rgba(10, 10, 10, 0.4);
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+	max-width: 960px;
+	margin: 60px 0px;
+	min-height: 30px;
+	min-width: 280px;
+	opacity: 1.0;
+	overflow: visible;
+	padding: 40px 20px 20px;
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	width: 70%;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-close
+{
+	color: #333333;
+	cursor: pointer;
+	font-size: 22px;
+	font-weight: 400;
+	height: 27px;
+	opacity: 0.8px;
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 27px;
+}
+
+/******************************************************************************/
+
+.yaga-lightbox-close:hover
+{
+	color: #000000;
+}
+
+/******************************************************************************/
